@@ -27,9 +27,9 @@ I would spend more time on feature engineering, for example looking into the fea
 |--|--|--|--|
 |initial|None|600|1.39584|
 |add_features|None|600|0.45651|
-|hpo_v1|'auto'|600|0.46976|
+|hpo_v1|'auto'|600|0.46313 |
 |hpo_v2|'random'|600|0.46976|
-|hpo_v3|'random'|1000|0.46976|
+|hpo_v3|'auto'|1000|0.46976|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
