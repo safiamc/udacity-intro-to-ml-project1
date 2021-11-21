@@ -17,7 +17,7 @@ This model performed significantly better! The Kaggle score dropped from approxi
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-Hyperparameter tuning did not improve the performance of my model on the test data. The Kaggle score decreased slightly, from 0.45651 to 0.46976. I tried increasing the time limit on the AutoGluon algorithm, but that did not increase my Kaggle score.
+Hyperparameter tuning did not significantly improve the performance of my model on the test data. The Kaggle score decreased slightly, from 0.45651 to 0.45194.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 I would spend more time on feature engineering, for example looking into the feature importance and removing features from the training dataset that have low correlations to count. Additionally, code posted on Kaggle from some of the very-low-score submissions suggest that 'count' is right-skewed, so I could use a transformation on my predictions to take that into account.
@@ -29,7 +29,7 @@ I would spend more time on feature engineering, for example looking into the fea
 |add_features|None|600|0.45651|
 |hpo_v1|'auto'|600|0.46313 |
 |hpo_v2|'random'|600|0.46976|
-|hpo_v3|'auto'|1000|0.46976|
+|hpo_v3|'auto'|1000|0.45194|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -40,4 +40,4 @@ I would spend more time on feature engineering, for example looking into the fea
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-
+I performed machine learning on historical bike demand data to predict hourly rentals, using AutoGluon. My initial model performed well, but the greatest gains in performance came after feature-engineering, specifically breaking datetime data into years, months, day of the week, and hour of the day. Hyperparameter tuning only modestly improved my model, suggesting that AutoGluon's default settings are sufficient for this use case.
