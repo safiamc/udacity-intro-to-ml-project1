@@ -33,11 +33,11 @@ I would spend more time on feature engineering, for example looking into the fea
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-![model_train_score.png](img/model_train_score.png)
+![model_train_score.png](model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](model_test_score.png)
 
 ## Summary
 I performed machine learning on historical bike demand data to predict hourly rentals, using AutoGluon. My initial model performed well, but the greatest gains in performance came after feature-engineering, specifically breaking datetime data into years, months, day of the week, and hour of the day. Hyperparameter tuning only modestly improved my model, suggesting that AutoGluon's default settings are sufficient for this use case.
